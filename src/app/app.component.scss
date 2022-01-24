@@ -6,7 +6,7 @@
 
     .blur, .blur2, .blur3{
         position: absolute;
-        pointer-events: none;
+        // pointer-events: none;
         height: 80%;
         width: auto;
     }
@@ -44,6 +44,7 @@
         & img{
             width:  45px;
             height: 45px;
+            padding-top: 2rem;
         }
     }
 
@@ -52,7 +53,6 @@
             width:  50px;
             height: 50px;
             margin-bottom: 1rem;
-            // border: 2px solid #FFF;
             background: linear-gradient(90deg, rgba(255, 255, 255, 0.2) -1.46%, rgba(255, 255, 255, 0.048) 100%);
             backdrop-filter: blur(14px);
             display: flex;
@@ -79,12 +79,14 @@
 
 .nft{
     width: calc(100% - 100px);
+    font-family: sans-serif;
     &-menu{
         display: flex;
         justify-content: space-between;
-        padding: 0 3rem;
+        align-items: center;
+        padding: 2rem 3rem;
         &-esq{
-            // width: 50%;
+            width: 40%;
             & ul{
                 list-style: none;
                 display: flex;
@@ -142,6 +144,7 @@
         color: #FFFFFF;
         padding: .5rem 3rem;
         border-radius: 5px;
+        clip-path: polygon(100% 0, 100% 60%, 80% 100%, 0 100%, 0 40%, 20% 0);
         background-color: #9E64F8;
     }
     .btn:hover{
